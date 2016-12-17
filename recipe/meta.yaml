@@ -1,4 +1,4 @@
-{% set version = "3.6.4" %}
+{% set version = "3.7.0" %}
 
 package:
   name: lxml
@@ -7,10 +7,10 @@ package:
 source:
   fn: lxml-{{ version }}.tar.gz
   url: https://github.com/lxml/lxml/archive/lxml-{{ version }}.tar.gz
-  sha256: f99ddce1221b93140a0488e71279b1d3076410ac7078fb3c3e9af11a7441286d
+  sha256: 0a7ae0cb94e82134f524798696249bf7f1ce8a782eebbd5902cbc4a91a0cb01c
 
 build:
-  number: 1
+  number: 0
   script:
     - python setup.py install --single-version-externally-managed --record record.txt --with-xslt-config=$PREFIX/bin/xslt-config  # [not win]
     - python setup.py install --single-version-externally-managed --record record.txt  # [win]
@@ -20,12 +20,11 @@ requirements:
     - python
     - setuptools
     - cython
-    # https://mailman-mail5.webfaction.com/pipermail/lxml/2016-September/007759.html
-    - libxml2 2.9.3
+    - libxml2 2.9.*
     - libxslt
   run:
     - python
-    - libxml2 2.9.3
+    - libxml2 2.9.*
     - libxslt
 
 test:
@@ -34,8 +33,8 @@ test:
     - lxml.etree
     - lxml.objectify
   commands:
-    #- conda inspect linkages -p $PREFIX lxml  # [not win]
-    #- conda inspect objects -p $PREFIX lxml  # [osx]
+    - conda inspect linkages -p $PREFIX lxml  # [not win]
+    - conda inspect objects -p $PREFIX lxml  # [osx]
 
 about:
   home: http://lxml.de/

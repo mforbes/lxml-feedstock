@@ -15,6 +15,18 @@ completeness of these libraries with the simplicity of a native Python API,
 mostly compatible but superior to the well-known ElementTree API.
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/lxml-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/lxml-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/lxml-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/lxml-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/lxml-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/lxml-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/lxml/badges/version.svg)](https://anaconda.org/conda-forge/lxml)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/lxml/badges/downloads.svg)](https://anaconda.org/conda-forge/lxml)
+
 Installing lxml
 ===============
 
@@ -35,7 +47,6 @@ It is possible to list all of the versions of `lxml` available on your platform 
 ```
 conda search lxml --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -71,18 +82,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/lxml-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/lxml-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/lxml-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/lxml-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/lxml-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/lxml-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/lxml/badges/version.svg)](https://anaconda.org/conda-forge/lxml)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/lxml/badges/downloads.svg)](https://anaconda.org/conda-forge/lxml)
 
 
 Updating lxml-feedstock
