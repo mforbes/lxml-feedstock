@@ -1,4 +1,4 @@
-{% set version = "3.7.0" %}
+{% set version = "3.7.1" %}
 
 package:
   name: lxml
@@ -7,7 +7,7 @@ package:
 source:
   fn: lxml-{{ version }}.tar.gz
   url: https://github.com/lxml/lxml/archive/lxml-{{ version }}.tar.gz
-  sha256: 0a7ae0cb94e82134f524798696249bf7f1ce8a782eebbd5902cbc4a91a0cb01c
+  sha256: aa94f3fb2440dfa972b770c8c92277f7362d66b1a687feeb6c858a8105b8682c
 
 build:
   number: 0
