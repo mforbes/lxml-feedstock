@@ -1,4 +1,4 @@
-{% set version = "3.7.2" %}
+{% set version = "3.7.3" %}
 
 package:
   name: lxml
@@ -6,11 +6,11 @@ package:
 
 source:
   fn: lxml-{{ version }}.tar.gz
-  url: https://github.com/lxml/lxml/archive/lxml-{{ version }}.tar.gz
-  sha256: 83390ce416b835e3a1760bcf2f4991b3041cdd55a9a0c16b4e112d71f05ff1d3
+  url: https://pypi.io/packages/source/l/lxml/lxml-{{ version }}.tar.gz
+  sha256: aa502d78a51ee7d127b4824ff96500f0181d3c7826e6ee7b800d068be79361c7
 
 build:
-  number: 1
+  number: 0
   script:
     - python setup.py install --single-version-externally-managed --record record.txt --with-xslt-config=$PREFIX/bin/xslt-config  # [not win]
     - python setup.py install --single-version-externally-managed --record record.txt  # [win]
