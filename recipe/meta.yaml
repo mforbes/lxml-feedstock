@@ -11,13 +11,13 @@ source:
 build:
   number: 0
   script:
-    - python setup.py install --single-version-externally-managed --record record.txt --with-xslt-config=$PREFIX/bin/xslt-config  # [not win]
-    - python setup.py install --single-version-externally-managed --record record.txt  # [win]
+    - python -m pip install --no-deps --ignore-installed . --global-option="--with-xslt-config=$PREFIX/bin/xslt-config"  # [not win]
+    - python -m pip install --no-deps --ignore-installed .  # [win]
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
     - cython
     - libxml2 2.9.*
     - libxslt
