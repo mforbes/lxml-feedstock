@@ -1,4 +1,4 @@
-{% set version = "4.1.1" %}
+{% set version = "4.2.0" %}
 
 package:
   name: lxml
@@ -6,18 +6,18 @@ package:
 
 source:
   url: https://pypi.io/packages/source/l/lxml/lxml-{{ version }}.tar.gz
-  sha256: 940caef1ec7c78e0c34b0f6b94fe42d0f2022915ffc78643d28538a5cfd0f40e
+  sha256: 7d96fbb5f23a62300aa9bef7d286cd61aca8902357619c8708c0290aba5df73f
 
 build:
   number: 0
   script:
-    - python setup.py install --single-version-externally-managed --record record.txt --with-xslt-config=$PREFIX/bin/xslt-config  # [not win]
-    - python setup.py install --single-version-externally-managed --record record.txt  # [win]
+    - python -m pip install --no-deps --ignore-installed . --global-option="--with-xslt-config=$PREFIX/bin/xslt-config"  # [not win]
+    - python -m pip install --no-deps --ignore-installed .  # [win]
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
     - cython
     - libxml2 2.9.*
     - libxslt
