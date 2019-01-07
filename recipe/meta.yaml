@@ -32,9 +32,6 @@ test:
     - lxml
     - lxml.etree
     - lxml.objectify
-  commands:
-    - conda inspect linkages -p $PREFIX lxml  # [not win]
-    - conda inspect objects -p $PREFIX lxml  # [osx]
 
 about:
   home: http://lxml.de/
