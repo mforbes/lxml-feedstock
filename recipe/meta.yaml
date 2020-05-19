@@ -10,9 +10,7 @@ source:
 
 build:
   number: 0
-  script:
-    - python -m pip install --no-deps --ignore-installed . --global-option="--with-xslt-config=$PREFIX/bin/xslt-config"  # [not win]
-    - python -m pip install --no-deps --ignore-installed .  # [win]
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
@@ -32,10 +30,14 @@ test:
     - lxml
     - lxml.etree
     - lxml.objectify
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: http://lxml.de/
-  license: BSD 3-Clause, GPL-2.0, ZPL-2.0, and ElementTree
+  license: BSD-3-Clause and GPL-2.0-only and ZPL-2.0 and LicenseRef-ElementTree
   license_file: LICENSES.txt
   summary: Pythonic binding for the C libraries libxml2 and libxslt.
   description: |
