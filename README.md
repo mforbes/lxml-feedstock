@@ -3,7 +3,7 @@ About lxml
 
 Home: http://lxml.de/
 
-Package license: BSD 3-Clause, GPL-2.0, ZPL-2.0, and ElementTree
+Package license: BSD-3-Clause and GPL-2.0-only and ZPL-2.0 and LicenseRef-ElementTree
 
 Feedstock license: BSD 3-Clause
 
