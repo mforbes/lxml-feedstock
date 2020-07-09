@@ -5,7 +5,7 @@ Home: http://lxml.de/
 
 Package license: BSD-3-Clause and GPL-2.0-only and ZPL-2.0 and LicenseRef-ElementTree
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Pythonic binding for the C libraries libxml2 and libxslt.
 
