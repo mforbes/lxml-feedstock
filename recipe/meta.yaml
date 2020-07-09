@@ -1,4 +1,4 @@
-{% set version = "4.5.1" %}
+{% set version = "4.5.2" %}
 
 package:
   name: lxml
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/l/lxml/lxml-{{ version }}.tar.gz
-  sha256: 27ee0faf8077c7c1a589573b1450743011117f1aa1a91d5ae776bbc5ca6070f2
+  sha256: cdc13a1682b2a6241080745b1953719e7fe0850b40a5c71ca574f090a1391df6
 
 build:
   number: 0
