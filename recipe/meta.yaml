@@ -19,7 +19,7 @@ requirements:
     - cython                                 # [build_platform != target_platform]
     - {{ compiler('c') }}
   host:
-    - libxml2
+    - libxml2<=2.9.10
     - python
     - pip
     - cython
